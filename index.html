@@ -16,8 +16,7 @@
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 </head>
 
@@ -187,6 +186,7 @@ function closeNav() {
 </script>
 </body>
 	<script>
-	var testTL = new TweenMax.to('Header h1', 1, {opacity: 0, repeat:-1, yoyo:true});
+	var testTL = new TimelineMax();
+		testTL.to('Header h1', 1, {opacity: 0, repeat:-1, yoyo:true});
 	</script>
 </html>
